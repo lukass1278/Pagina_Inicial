@@ -18,6 +18,11 @@ namespace Pagina_Inicial.Controllers
             return View();
         }
 
+        public IActionResult Azul()
+        {
+            return View();
+        }
+        
         public IActionResult Privacy()
         {
             return View();

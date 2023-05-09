@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
+    <link href="./styles/index.css" rel="stylesheet">
+</head>
+<body>
+
+</body>
+</html>
+<div class="form-wrap">
+	<div class="tabs">
+		<h3 class="signup-tab"><a class="active" href="#signup-tab-content">Cadastro</a></h3>
+		<h3 class="login-tab"><a href="#login-tab-content">Login</a></h3>
+	</div><!--.tabs-->
+
+	<div class="tabs-content">
+		<div id="signup-tab-content" class="active">
+			<form class="signup-form" action="" method="post">
+				<input type="email" class="input" id="user_email" autocomplete="off" placeholder="Email">
+				<input type="text" class="input" id="user_name" autocomplete="off" placeholder="Usuário">
+				<input type="password" class="input" id="user_pass" autocomplete="off" placeholder="Senha">
+				<input type="text" class="input" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Digite o CPF no formato nnn.nnn.nnn-nn" placeholder="CPF">
+				<input type="text" class="input" name="rg" pattern="\d{2}\.\d{3}\.\d{3}-\d{1}" title="Digite o RG no formato nn.nnn.nnn-n" placeholder="RG">
+				<input type="text" class="input" id="user_name" autocomplete="off" placeholder="Empresa">
+				<input type="submit" class="button" value="Cadastrado">
+			</form><!--.login-form-->
+			<div class="help-text">
+				<p>Ao se inscrever, você concorda com nossos</p>
+				<p><a href="#">termos de serviço!</a></p>
+			</div><!--.help-text-->
+		</div><!--.signup-tab-content-->
+
+		<div id="login-tab-content">
+			<form class="login-form" action="" method="post">
+				<input type="text" class="input" id="user_login" autocomplete="off" placeholder="Email ou Usuário">
+				<input type="password" class="input" id="user_pass" autocomplete="off" placeholder="Senha">
+				<input type="checkbox" class="checkbox" id="remember_me">
+				<label for="remember_me">Lembrar Senha</label>
+				<input type="submit" class="button" value="Login">
+			</form><!--.login-form-->
+			<div class="help-text">
+				<p><a href="#">Esqueceu a senha?</a></p>
+			</div><!--.help-text-->
+		</div><!--.login-tab-content-->
+	</div><!--.tabs-content-->
+</div><!--.form-wrap-->
