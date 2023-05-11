@@ -22,7 +22,10 @@ namespace Pagina_Inicial.Controllers
         {
             return View();
         }
-        
+        public IActionResult contato()
+        {
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();
